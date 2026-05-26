@@ -11,42 +11,22 @@
   <style>
     .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .reveal.revealed { opacity: 1; transform: none; }
-    .eligibility-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
+    .eligibility-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
     @media (max-width:640px) { .eligibility-grid { grid-template-columns:1fr; } }
     .eligibility-card {
-      background: var(--white);
-      border: 1px solid var(--light-gray);
-      border-top: 4px solid var(--gold);
-      padding: 1.5rem 2rem;
-      border-radius: 2px;
+      background: var(--white); border: 1px solid var(--light-gray);
+      border-top: 4px solid var(--gold); padding: 1.5rem 2rem; border-radius: 2px;
     }
     .eligibility-card h4 { color: var(--navy); margin-bottom: 0.75rem; }
     .eligibility-card p { font-size: 0.93rem; color: #555; margin: 0; }
-    .not-for-list li {
-      padding: 6px 0 6px 24px;
-      position: relative;
-      font-size: 0.93rem;
-      color: #555;
-    }
-    .not-for-list li::before {
-      content: '✕';
-      position: absolute; left: 0;
-      color: #c0392b;
-      font-size: 0.7rem;
-      top: 10px;
-    }
+    .not-for-list li { padding: 6px 0 6px 24px; position: relative; font-size: 0.93rem; color: #555; }
+    .not-for-list li::before { content: "x"; position: absolute; left: 0; color: #c0392b; font-size: 0.7rem; top: 10px; }
   </style>
 </head>
 <body>
-
   <div id="header-placeholder"></div>
 
-  <!-- Hero with background image -->
+  <!-- Hero -->
   <div class="page-offset"></div>
   <section style="position:relative; padding:80px 0 50px; text-align:center; overflow:hidden;">
     <img src="Resources/TaxPlanning/TaxPlanningBackgroundImage.avif" alt=""
@@ -62,17 +42,14 @@
     </div>
   </section>
 
-  <!-- Tax planning images strip -->
+  <!-- Image Strip -->
   <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:4px;">
-    <img src="Resources/TaxPlanning/TaxPlanningImage1.avif" alt="Tax Planning"
-         style="width:100%; height:auto; display:block;" />
-    <img src="Resources/TaxPlanning/TaxPlanningImage2.avif" alt="Tax Planning"
-         style="width:100%; height:auto; display:block;" />
-    <img src="Resources/TaxPlanning/TaxPlanningImage3.avif" alt="Tax Planning"
-         style="width:100%; height:auto; display:block;" />
+    <img src="Resources/TaxPlanning/TaxPlanningImage1.avif" alt="Tax Planning" style="width:100%; height:auto; display:block;" />
+    <img src="Resources/TaxPlanning/TaxPlanningImage2.avif" alt="Tax Planning" style="width:100%; height:auto; display:block;" />
+    <img src="Resources/TaxPlanning/TaxPlanningImage3.avif" alt="Tax Planning" style="width:100%; height:auto; display:block;" />
   </div>
 
-  <!-- SECTION 2: Overview -->
+  <!-- Overview -->
   <section class="section">
     <div class="container">
       <div style="max-width:860px; margin:0 auto;">
@@ -87,30 +64,21 @@
           and select business-owner relationships who want their personal finances, business finances, tax strategy,
           and wealth plan coordinated through one planning-first relationship.
         </p>
-
         <h3 class="reveal" style="color:var(--navy); margin:2.5rem 0 1rem;">Who Affinity Tax Planning Serves</h3>
         <p class="reveal" style="color:#444;">
           Affinity Tax is not a standalone tax preparation service for the general public. We work with clients
           where tax preparation and tax planning are part of a larger advisory relationship.
         </p>
-
         <div class="eligibility-grid reveal">
           <div class="eligibility-card">
             <h4>Total Wealth Management Clients</h4>
-            <p>
-              Individuals, families, retirees, executives, and business owners who are engaged in Affinity
-              Wealth&rsquo;s Total Wealth Management relationship.
-            </p>
+            <p>Individuals, families, retirees, executives, and business owners who are engaged in Affinity Wealth&rsquo;s Total Wealth Management relationship.</p>
           </div>
           <div class="eligibility-card">
             <h4>Outsourced CFO Business Clients</h4>
-            <p>
-              Business-owner clients who utilize our Outsourced CFO service and want coordinated bookkeeping,
-              business tax preparation, and owner-level tax planning.
-            </p>
+            <p>Business-owner clients who utilize our Outsourced CFO service and want coordinated bookkeeping, business tax preparation, and owner-level tax planning.</p>
           </div>
         </div>
-
         <h4 class="reveal" style="color:var(--navy); margin:2.5rem 0 0.75rem;">We do not provide tax preparation for:</h4>
         <ul class="not-for-list reveal">
           <li>Individuals who are not Affinity Wealth Total Wealth Management clients</li>
@@ -148,7 +116,7 @@
     </div>
   </section>
 
-  <!-- SECTION 3: YouTube Video -->
+  <!-- Video -->
   <section class="section">
     <div class="container">
       <div style="max-width:800px; margin:0 auto;" class="reveal">
@@ -160,7 +128,7 @@
     </div>
   </section>
 
-  <!-- SECTION 4: Services Grid -->
+  <!-- Services Grid -->
   <section class="section bg-off-white">
     <div class="container">
       <div class="section-heading text-center reveal">
@@ -174,7 +142,7 @@
         </div>
         <div class="feature-box reveal">
           <h4>Year-Round Tax Guidance</h4>
-          <p>Tax planning isn&rsquo;t a once-a-year task; it&rsquo;s an ongoing process. We provide year-round guidance to ensure that you make informed financial decisions that align with your tax objectives. This proactive approach helps you avoid last-minute scrambles during tax season.</p>
+          <p>Tax planning isn&rsquo;t a once-a-year task; it&rsquo;s an ongoing process. We provide year-round guidance to ensure that you make informed financial decisions that align with your tax objectives, helping you avoid last-minute scrambles during tax season.</p>
         </div>
         <div class="feature-box reveal">
           <h4>Investment Tax Planning</h4>
@@ -194,7 +162,7 @@
         </div>
         <div class="feature-box reveal">
           <h4>Tax-Efficient Charitable Giving</h4>
-          <p>We help you align your philanthropic goals with tax-efficient charitable giving strategies. Whether it&rsquo;s establishing a charitable foundation or maximizing deductions through strategic donations, we guide you in making a positive impact while minimizing your tax burden.</p>
+          <p>We help you align your philanthropic goals with tax-efficient charitable giving strategies. Whether establishing a charitable foundation or maximizing deductions through strategic donations, we guide you in making a positive impact while minimizing your tax burden.</p>
         </div>
         <div class="feature-box reveal">
           <h4>Tax Compliance &amp; Preparation</h4>
