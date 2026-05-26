@@ -52,11 +52,8 @@
       </li>
 
       <!-- CONTACT -->
-      <li class="has-dropdown">
-        <a href="contact.html">CONTACT <span class="caret">&#9660;</span></a>
-        <div class="dropdown single-col">
-          <a href="contact.html">Contact</a>
-        </div>
+      <li>
+        <a href="contact.html">CONTACT</a>
       </li>
 
       <!-- MEDIA -->

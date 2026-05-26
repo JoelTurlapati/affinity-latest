@@ -208,10 +208,10 @@ p:last-child { margin-bottom: 0; }
   left: 50%;
   transform: translateX(-50%);
   background: var(--white);
-  min-width: 560px;
+  min-width: 480px;
   box-shadow: var(--shadow-lg);
   border-top: 3px solid var(--gold);
-  padding: 24px;
+  padding: 16px 20px;
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition);
@@ -228,20 +228,20 @@ p:last-child { margin-bottom: 0; }
   gap: 0 2rem;
 }
 .dropdown-col h5 {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-family: var(--font-sans);
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gold);
-  padding-bottom: 8px;
-  margin-bottom: 8px;
+  padding-bottom: 6px;
+  margin-bottom: 4px;
   border-bottom: 1px solid var(--light-gray);
 }
 .dropdown-col a {
   display: block;
-  padding: 6px 0;
-  font-size: 0.9rem;
+  padding: 4px 0;
+  font-size: 0.88rem;
   color: var(--navy);
   font-weight: 500;
   transition: color var(--transition), padding-left var(--transition);
@@ -252,12 +252,12 @@ p:last-child { margin-bottom: 0; }
 }
 /* Single-col dropdown */
 .dropdown.single-col {
-  min-width: 220px;
+  min-width: 180px;
 }
 .dropdown.single-col a {
   display: block;
-  padding: 8px 0;
-  font-size: 0.9rem;
+  padding: 5px 0;
+  font-size: 0.88rem;
   color: var(--navy);
   font-weight: 500;
   transition: color var(--transition), padding-left var(--transition);
