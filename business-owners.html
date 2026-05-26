@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Owners | The Affinity Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.revealed { opacity: 1; transform: none; }
+
+    /* Hero with video */
+    .biz-hero {
+      position: relative;
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .biz-hero video {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; z-index: 0;
+    }
+    .biz-hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(10,35,66,0.82) 0%, rgba(10,35,66,0.55) 100%);
+      z-index: 1;
+    }
+    .biz-hero-content {
+      position: relative; z-index: 2;
+      text-align: center;
+      color: var(--white);
+      max-width: 900px;
+      padding: var(--nav-height) 2rem 4rem;
+    }
+    .biz-hero-content h1 { color: var(--white); margin-bottom: 1rem; }
+    .biz-hero-content .tagline {
+      font-size: 1.2rem;
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+      font-style: italic;
+      margin-bottom: 2rem;
+    }
+    .biz-hero-content p { color: rgba(255,255,255,0.85); font-size: 1rem; max-width: 700px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <!-- SECTION 1: Hero with Background Video -->
+  <section class="biz-hero">
+    <video autoplay muted loop playsinline poster="Resources/BusinessOwners/BusinessOwnersBackgroundVideo.jpg">
+      <source src="Resources/BusinessOwners/BusinessOwnersBackgroundVideo.mp4" type="video/mp4" />
+    </video>
+    <div class="biz-hero-overlay"></div>
+    <div class="biz-hero-content">
+      <h1>Imagine having an Advisor who is a founder/owner&hellip; Just like you.</h1>
+      <p class="tagline">&ldquo;We manage and protect what you&rsquo;ve built, so you can focus on what you do best.&rdquo;</p>
+      <p>
+        Founding a successful and thriving business is one of the greatest accomplishments a business owner
+        can achieve. It will also be one of their greatest assets. However, owners may find that the demands
+        of the business dictate their personal lives.
+      </p>
+      <p style="margin-top:1rem;">
+        We help business owners balance their time by building an intentional plan to ensure their business
+        is a support system for a life by design, and not a master that controls every thought and action.
+        To see more of how we can solve complexities for your business and personal financial lives, see the
+        complete outline of offerings below.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION 2: Outsourced CFO Services -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading text-center reveal">
+        <h2>Outsourced CFO Services</h2>
+        <div class="divider"></div>
+      </div>
+      <div style="max-width:860px; margin:0 auto; text-align:center;">
+        <p class="reveal" style="color:#444; font-size:1.05rem;">
+          Our Outsourced CFO offering is designed to help busy business owners &amp; their family free up
+          valuable time managing different aspects of your personal and business finances.
+        </p>
+        <p class="reveal" style="color:#555; margin-top:1rem;">
+          If the complete offering displayed below is not for you, we offer Executive Benefit planning,
+          401k &amp; Retirement plans, &amp; Investment Management outside of our Outsourced CFO Service Offering.
+        </p>
+        <p class="reveal" style="color:var(--navy); font-weight:700; margin-top:1rem;">
+          Click on the icons below to learn more about our services offered through our Outsourced Business Owner Package.
+        </p>
+      </div>
+      <div class="circle-image-wrap reveal" style="max-width:700px;">
+        <img src="Resources/BusinessOwners/BusinessOwnersCircle.avif" alt="Business Owners CFO Circle" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Total Wealth Management -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="section-heading text-center reveal">
+        <h2>Total Wealth Management</h2>
+        <div class="divider"></div>
+      </div>
+      <div style="max-width:860px; margin:0 auto; text-align:center;">
+        <div class="reveal" style="margin-bottom:2rem; border-radius:4px; overflow:hidden; box-shadow:var(--shadow);">
+          <img src="Resources/BusinessOwners/BusinessOwnersImage.avif" alt="Business Owners"
+               style="width:100%; display:block;" />
+        </div>
+        <p class="reveal" style="color:#444; font-size:1.05rem;">
+          In addition to helping you with different aspects of your business, we can help you manage your
+          personal financial picture too. What you do with your business finances can sometimes affect your
+          personal financial picture, and our team of experts is here to help you manage both simultaneously
+          so you can worry less and spend more time enjoying other aspects of your busy life.
+        </p>
+        <p class="reveal" style="color:#555; margin-top:1rem;">
+          If the complete offering displayed is not for you, we offer Investment Management, Real Estate
+          Investing, and Life/Long-Term Care Insurance outside of our Total Wealth Management offering.
+        </p>
+      </div>
+      <div class="circle-image-wrap reveal" style="max-width:700px;">
+        <img src="Resources/BusinessOwners/TotalWealthManagementCircle.avif" alt="Total Wealth Management Circle" />
+      </div>
+      <div class="text-center" style="margin-top:2rem;">
+        <a href="total-

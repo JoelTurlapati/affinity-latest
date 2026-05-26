@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estate Planning | The Affinity Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.revealed { opacity: 1; transform: none; }
+    .estate-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      align-items: stretch;
+      margin-bottom: 4px;
+    }
+    .estate-block .eb-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      min-height: 300px;
+      display: block;
+    }
+    .estate-block .eb-text {
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: var(--white);
+    }
+    .estate-block.alt .eb-text { background: var(--off-white); }
+    .estate-block .eb-text h3 { color: var(--navy); margin-bottom: 1rem; }
+    .estate-block .eb-text p  { color: #444; line-height: 1.8; margin: 0; }
+    .estate-block.reverse .eb-img { order: 2; }
+    .estate-block.reverse .eb-text { order: 1; }
+    @media (max-width: 760px) {
+      .estate-block { grid-template-columns: 1fr; }
+      .estate-block.reverse .eb-img,
+      .estate-block.reverse .eb-text { order: unset; }
+      .estate-block .eb-text { padding: 2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <!-- Hero -->
+  <div class="page-offset"></div>
+  <section style="background:var(--navy); padding:70px 0 40px; text-align:center;">
+    <div class="container">
+      <h1 style="color:var(--white);">Estate Planning</h1>
+      <div class="divider"></div>
+      <p style="color:rgba(255,255,255,0.75); font-size:1.05rem; max-width:700px; margin:1rem auto 0; font-family:var(--font-serif); font-style:italic;">
+        &ldquo;Will, Powers of Attorney, Living Wills are all just the start of evaluating the vision you have for your legacy.&rdquo;
+      </p>
+      <p style="color:rgba(255,255,255,0.7); max-width:700px; margin:1rem auto 0; font-size:0.95rem;">
+        We evaluate clients&rsquo; estate plans and introduce them to a network estate planning attorney to help
+        ensure their goals will be fully met with their current documents.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main hero image -->
+  <div>
+    <img src="Resources/EstatePlanning/EstatePlanningImage.avif" alt="Estate Planning"
+         style="width:100%; display:block;" />
+  </div>
+
+  <!-- 1. Setting up the Correct Estate Documents -->
+  <div class="estate-block reveal">
+    <div class="eb-img">
+      <img src="Resources/EstatePlanning/SettinguptheCorrectEstateDocumentsImage1.avif"
+           alt="Setting Up Estate Documents" loading="lazy" />
+    </div>
+    <div class="eb-text">
+      <h3>Setting Up the Correct Estate Documents</h3>
+      <p>
+        It takes a lifetime to build a comfortable nest egg for retirement; however, many have not fully evaluated
+        exactly what would happen in the event of a premature death. With a couple of conversations, a few swipes
+        of the pen, and a few sentences of an estate plan, all of your wishes and proper protections for your loved
+        ones can be achieved.
+      </p>
+    </div>
+  </div>
+
+  <!-- 2. Managing Unknown Risk -->
+  <div class="estate-block reverse reveal">
+    <div class="eb-img">
+      <img src="Resources/EstatePlanning/ManagingUnknownRiskImage1.avif"
+           alt="Managing Unknown Risk" loading="lazy" />
+    </div>
+    <div class="eb-text alt">
+      <h3>Managing Unknown Risk</h3>
+      <p>
+        We find that many of our clients, when we first meet them, are unknowingly putting their children and loved
+        ones at risk by leaving assets to them outright without realizing it. We walk through all the important
+        considerations as they relate to each client&rsquo;s specific family situation.
+      </p>
+    </div>
+  </div>
+
+  <!-- 3. Taking Care of Everything -->
+  <div class="estate-block reveal">
+    <div class="eb-img">
+      <img src="Resources/EstatePlanning/TakingCareofEverythingImage.avif"
+           alt="Taking Care of Everything" loading="lazy" />
+    </div>
+    <div class="eb-text">
+      <h3>Taking Care of Everything</h3>
+      <p>
+        We conduct a state alignment across all of the client&rsquo;s assets and financial accounts, meaning once
+        the proper estate planning documents are in place we directly help the client get account titling correct
+        and proper beneficiaries updated on all financial accounts and assets.
+      </p>
+    </div>
+  </div>
+
+  <!-- Services Grid -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="section-heading text-center reveal">
+        <h2>Comprehensive Estate Planning Services</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-box reveal">
+          <h4>Personalized Estate Planning</h4>
+          <p>Our team takes a personalized approach to craft tailored strategies that align with your unique financial goals, family dynamics, and legacy aspirations. Each client&rsquo;s situation is distinct, and we are committed to creating solutions that address your specific needs.</p>
+        </div>
+        <div class="feature-box reveal">
+          <h4>Will and Trust Formation</h4>
+          <p>We guide you through the intricacies of will and trust formation, helping you articulate your wishes clearly. Whether establishing a revocable living trust, irrevocable trust, or drafting a comprehensive will, our experts ensure your intentions are legally sound and seamlessly executed.</p>
+        </div>
+        <div class="feature-box reveal">
+          <h4>Probate Avoidance</h4>
+          <p>Our team crafts strategies aligned with your unique financial goals, family dynamics, and legacy aspirations, ensuring your estate passes smoothly to your beneficiaries while avoiding costly and time-consuming probate proceedings.</p>
+        </div>
+        <div class="feature-box reveal">
+          <h4>Tax-Efficient Estate Planning</h4>
+          <p>We guide you through will and trust formation, helping you articulate your wishes clearly. Our experts ensure that your intentions are legally sound and seamlessly executed, while minimizing tax exposure for your beneficiaries.</p>
+        </div>
+        <div class="feature-box reveal">
+          <h4>Business Succession Planning</h4>
+          <p>Our team takes a personalized approach to craft tailored strategies that align with your unique goals. We understand that each client&rsquo;s situation is distinct, and we are committed to creating solutions that address your specific business succession needs.</p>
+        </div>
+        <div class="feature-box reveal">
+          <h4>Charitable Giving Strategies</h4>
+          <p>We guide you through charitable giving strategies. Whether establishing a charitable foundation or maximizing deductions through strategic donations, we guide you in making a positive impact while optimizing your tax position.</p>
+        </div>
+        <div class="feature-box reveal">
+          <h4>Family Wealth Education</h4>

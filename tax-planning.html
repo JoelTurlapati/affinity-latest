@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tax Planning | The Affinity Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.revealed { opacity: 1; transform: none; }
+    .eligibility-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    @media (max-width:640px) { .eligibility-grid { grid-template-columns:1fr; } }
+    .eligibility-card {
+      background: var(--white);
+      border: 1px solid var(--light-gray);
+      border-top: 4px solid var(--gold);
+      padding: 1.5rem 2rem;
+      border-radius: 2px;
+    }
+    .eligibility-card h4 { color: var(--navy); margin-bottom: 0.75rem; }
+    .eligibility-card p { font-size: 0.93rem; color: #555; margin: 0; }
+    .not-for-list li {
+      padding: 6px 0 6px 24px;
+      position: relative;
+      font-size: 0.93rem;
+      color: #555;
+    }
+    .not-for-list li::before {
+      content: '✕';
+      position: absolute; left: 0;
+      color: #c0392b;
+      font-size: 0.7rem;
+      top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <!-- Hero with background image -->
+  <div class="page-offset"></div>
+  <section style="position:relative; padding:80px 0 50px; text-align:center; overflow:hidden;">
+    <img src="Resources/TaxPlanning/TaxPlanningBackgroundImage.avif" alt=""
+         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:brightness(0.25);" />
+    <div style="position:relative;z-index:1;">
+      <div class="container">
+        <h1 style="color:var(--white);">Tax Planning</h1>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.8); font-size:1rem; max-width:700px; margin:1rem auto 0;">
+          Affinity Private Tax &mdash; Integrated tax planning and preparation for select Affinity Wealth clients.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tax planning images strip -->
+  <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:4px;">
+    <img src="Resources/TaxPlanning/TaxPlanningImage1.avif" alt="Tax Planning"
+         style="width:100%; height:auto; display:block;" />
+    <img src="Resources/TaxPlanning/TaxPlanningImage2.avif" alt="Tax Planning"
+         style="width:100%; height:auto; display:block;" />
+    <img src="Resources/TaxPlanning/TaxPlanningImage3.avif" alt="Tax Planning"
+         style="width:100%; height:auto; display:block;" />
+  </div>
+
+  <!-- SECTION 2: Overview -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width:860px; margin:0 auto;">
+        <p class="reveal" style="font-size:1.05rem; color:#444; line-height:1.9;">
+          Affinity Private Tax was created to solve a common problem for successful families and business owners:
+          their tax return, investment strategy, retirement plan, estate plan, insurance planning, and business
+          cash flow are often handled in separate silos.
+        </p>
+        <p class="reveal" style="color:#444;">
+          Affinity Private Tax is not a standalone tax preparation firm. It is an integrated tax planning and
+          preparation service available exclusively to qualifying Affinity Wealth Total Wealth Management clients
+          and select business-owner relationships who want their personal finances, business finances, tax strategy,
+          and wealth plan coordinated through one planning-first relationship.
+        </p>
+
+        <h3 class="reveal" style="color:var(--navy); margin:2.5rem 0 1rem;">Who Affinity Tax Planning Serves</h3>
+        <p class="reveal" style="color:#444;">
+          Affinity Tax is not a standalone tax preparation service for the general public. We work with clients
+          where tax preparation and tax planning are part of a larger advisory relationship.
+        </p>
+
+        <div class="eligibility-grid reveal">
+          <div class="eligibility-card">
+            <h4>Total Wealth Management Clients</h4>
+            <p>
+              Individuals, families, retirees, executives, and business owners who are engaged in Affinity
+              Wealth&rsquo;s Total Wealth Management relationship.
+            </p>
+          </div>
+          <div class="eligibility-card">
+            <h4>Outsourced CFO Business Clients</h4>
+            <p>
+              Business-owner clients who utilize our Outsourced CFO service and want coordinated bookkeeping,
+              business tax preparation, and owner-level tax planning.
+            </p>
+          </div>
+        </div>
+
+        <h4 class="reveal" style="color:var(--navy); margin:2.5rem 0 0.75rem;">We do not provide tax preparation for:</h4>
+        <ul class="not-for-list reveal">
+          <li>Individuals who are not Affinity Wealth Total Wealth Management clients</li>
+          <li>Businesses that are not part of our Outsourced CFO relationship</li>
+          <li>Clients seeking only a one-time tax return</li>
+          <li>Clients who are not looking for integrated planning</li>
+          <li>Businesses with incomplete or unsupported books unless a cleanup engagement is first completed</li>
+        </ul>
+        <p class="reveal" style="color:#444; margin-top:1.5rem;">
+          This allows our team to remain focused on the clients we are built to serve: families and business
+          owners who want coordinated advice across their full financial picture.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tax Built Around Your Plan -->
+  <section class="section bg-navy">
+    <div class="container">
+      <div style="max-width:800px; margin:0 auto; text-align:center; color:var(--white);">
+        <h2 class="reveal" style="color:var(--white);">Tax Services Built Around Your Total Wealth Plan</h2>
+        <div class="divider reveal"></div>
+        <p class="reveal" style="color:rgba(255,255,255,0.8);">
+          Our Total Wealth Management clients rely on Affinity Wealth to help evaluate, organize, and guide
+          the many moving pieces of their financial life.
+        </p>
+        <p class="reveal" style="color:rgba(255,255,255,0.8);">
+          Affinity Tax was created to support that same approach. Rather than treating tax preparation as a
+          once-a-year transaction, we use the tax return as part of the broader planning process. Your tax
+          picture may impact retirement income decisions, Roth conversion opportunities, charitable giving,
+          investment strategy, business-owner compensation, estate planning, withholding, estimated payments,
+          and more. For clients who qualify, Affinity Tax helps connect those dots.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: YouTube Video -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width:800px; margin:0 auto;" class="reveal">
+        <div class="video-thumb yt-modal" data-yt="P5DPc7iY5g8" style="border-radius:4px; overflow:hidden; cursor:pointer;">
+          <img src="https://img.youtube.com/vi/P5DPc7iY5g8/hqdefault.jpg" alt="Tax Planning" style="width:100%; display:block;" loading="lazy" />
+          <div class="play-btn"><div class="play-btn-circle"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Services Grid -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="section-heading text-center reveal">
+        <h2>Our Tax Planning Services</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-box reveal">
+          <h4>Personalized Tax Strategies</h4>
+          <p>We work closely with you to develop personalized tax strategies tailored to your unique financial situation. We analyze your income, investments, and goals to create a tax plan that minimizes liabilities and maximizes your financial well-being.</p>
+        </div>
+        <div class="feature-box reveal">
+          <h4>Year-Round Tax Guidance</h4>
+          <p>Tax planning isn&rsquo;t a once-a-year task; it&rsquo;s an ongoing process. We provide year-round guidance to ensure that you make informed financial decisions that align with your tax objectives. This proactive approach helps you avoid last-minute scrambles during tax season.</p>
+        </div>
+        <div class="feature-box reveal">
+          <h4>Investment Tax Planning</h4>
+          <p>Our team will optimize your investment portfolio for tax efficiency. From capital gains to dividends, we strategically structure your investments to minimize tax implications and enhance overall returns.</p>
+        </div>
+        <div class="feature-box reveal">
+          <h4>Retirement Planning</h4>
+          <p>Planning for retirement involves careful consideration of tax implications. We help you navigate tax-efficient retirement planning, exploring options such as Roth IRA conversions, strategic withdrawal strategies, and maximizing tax advantages available for retirement accounts.</p>
+        </div>
+        <div class="feature-box reveal">
+          <h4>Estate Tax Planning</h4>
+          <p>Preserving your wealth for future generations requires careful estate tax planning. Our advisors work with you to develop strategies that minimize estate taxes, ensuring that your legacy is passed on in a tax-efficient manner.</p>
+        </div>
+        <div class="feature-box reveal">
+          <h4>Business Tax Planning</h4>
+          <p>For business owners, tax planning involves navigating a complex landscape. We offer comprehensive business tax planning services, including entity structuring, deductions, and credits, to optimize your tax position and support the growth of your business.</p>
+        </div>
+        <div class="feature-box reveal">
+          <h4>Tax-Efficient Charitable Giving</h4>
+          <p>We help you align your philanthropic goals with tax-efficient charitable giving strategies. Whether it&rsquo;s establishing a charitable foundation or maximizing deductions through strategic donations, we guide you in making a positive impact while minimizing your tax burden.</p>
+        </div>
+        <div class="feature-box reveal">
+          <h4>Tax Compliance &amp; Preparation</h4>
+          <p>Our comprehensive tax compliance services ensure that your tax returns are accurate, complete, and filed on time. We stay current with the latest tax laws and regulations, so you don&rsquo;t have to worry about staying compliant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="banner-cta">
+    <div class="container">
+      <a href="contact.html" class="btn btn-gold">Schedule Your Free Introductory Call</a>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="partials.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

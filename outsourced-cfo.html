@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outsourced CFO | The Affinity Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.revealed { opacity: 1; transform: none; }
+    .cfo-img { width:100%; border-radius:4px; box-shadow:var(--shadow); margin-bottom:1.5rem; }
+  </style>
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <!-- Hero with background image -->
+  <div class="page-offset"></div>
+  <section style="position:relative; padding:90px 0 60px; text-align:center; overflow:hidden;">
+    <img src="Resources/Outsourced CFO/OutsourcedCFOBackgroundImage.avif" alt=""
+         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:brightness(0.28);" />
+    <div style="position:relative;z-index:1;" class="container">
+      <h1 style="color:var(--white);">Outsourced CFO</h1>
+      <div class="divider"></div>
+    </div>
+  </section>
+
+  <!-- Pricing highlight -->
+  <div class="pricing-banner">
+    <div class="container">
+      <p>Monthly Retainer Fee of $800 &ndash; $10,000 / Month</p>
+    </div>
+  </div>
+
+  <!-- SECTION 3: Services Description -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading text-center reveal">
+        <h2>Outsourced CFO Services</h2>
+        <div class="divider"></div>
+      </div>
+      <div style="max-width:860px; margin:0 auto;">
+        <p class="reveal" style="font-size:1.05rem; color:#444; text-align:center;">
+          Our Outsourced CFO offering is designed to help busy business owners &amp; their family free up
+          valuable time managing different aspects of your personal and business finances.
+        </p>
+        <p class="reveal" style="color:#555; text-align:center; margin-top:1rem;">
+          Click on the icons below to learn more about our services offered through our Outsourced Business
+          Owner Package.
+        </p>
+        <p class="reveal" style="color:#555; text-align:center; margin-top:0.5rem;">
+          If the complete offering displayed below is not for you, we offer Executive Benefit planning,
+          401k &amp; Retirement plans, &amp; Investment Management outside of our Outsourced CFO Service Offering.
+        </p>
+
+        <!-- CFO Services Image -->
+        <div class="reveal" style="margin-top:2.5rem; border-radius:4px; overflow:hidden; box-shadow:var(--shadow-lg); max-width:680px; margin-left:auto; margin-right:auto;">
+          <img src="Resources/Outsourced CFO/OutsourcedCFOImage1.avif" alt="Outsourced CFO Services"
+               style="width:100%; display:block;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Buttons -->
+  <section class="section-sm text-center">
+    <div class="container" style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
+      <a href="our-team.html" class="btn btn-gold reveal">Our Team</a>
+      <a href="business-owners.html" class="btn btn-navy reveal">Business Owners</a>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="partials.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

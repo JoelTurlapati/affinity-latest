@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Affinity Group | Fiduciary Wealth Management | Canton, OH</title>
+  <meta name="description" content="Affinity Group is a fiduciary wealth management firm based in Canton and Akron, Ohio serving retirees, business owners, and high-earning individuals nationwide." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Reveal animations */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.revealed { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    /* Section 2 — About strip */
+    .about-strip { background: var(--off-white); }
+    .about-strip-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .about-strip-inner p { font-size: 1.1rem; color: #444; line-height: 1.9; }
+
+    /* Section 4 — Our Approach */
+    .approach-section { background: var(--navy); }
+    .approach-section .section-heading h2 { color: var(--white); }
+    .approach-section .section-heading p  { color: rgba(255,255,255,0.75); }
+    .approach-text {
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center;
+      color: rgba(255,255,255,0.85);
+      font-size: 1.1rem;
+      line-height: 1.9;
+    }
+
+    /* Section 6 — Fiduciary strip */
+    .fiduciary-strip { background: var(--off-white); }
+    .fiduciary-strip-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .fiduciary-strip-inner p { font-size: 1.1rem; color: #444; }
+
+    /* Watch video button */
+    .watch-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 28px;
+      background: var(--navy);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      margin-top: 1.5rem;
+      transition: background var(--transition), transform var(--transition);
+    }
+    .watch-btn:hover { background: var(--navy-light); transform: translateY(-2px); }
+    .watch-btn .play-circle {
+      width: 36px; height: 36px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .watch-btn .play-circle::after {
+      content: '';
+      border-style: solid;
+      border-width: 7px 0 7px 12px;
+      border-color: transparent transparent transparent var(--navy);
+      margin-left: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header injected by partials.js -->
+  <div id="header-placeholder"></div>
+
+  <!-- ===================================================
+       SECTION 1: Hero with Background Video
+  ==================================================== -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="Resources/HomePage/HomePageBackgroundVideo.jpg">
+      <source src="Resources/HomePage/HomePageBackgroundVideo.mp4" type="video/mp4" />
+      
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="definition reveal">
+        A&middot;ffin&middot;i&middot;ty Group &nbsp;<em>noun</em>
+        <br />
+        <span style="font-size:0.65em; color:rgba(255,255,255,0.85); font-family:var(--font-sans); font-style:normal; letter-spacing:0.03em;">
+          : A group of people linked by a common interest or goal.
+        </span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 2: About the Firm
+  ==================================================== -->
+  <section class="section about-strip">
+    <div class="container">
+      <div class="about-strip-inner">
+        <div class="divider reveal"></div>
+        <p class="reveal reveal-delay-1">
+          The Affinity Group is a fiduciary wealth management firm based in Canton and Akron, Ohio
+          serving retirees with sizable investment assets, business owners, and high-earning
+          individuals and families nationwide.
+        </p>
+        <br />
+        <p class="reveal reveal-delay-2">
+          Affinity Wealth is an SEC Registered Investment Advisor, providing wealth management,
+          retirement planning, investment management, and total financial coordination.
+          Affinity Private Tax provides integrated tax planning and preparation for Affinity Wealth clients,
+          designed to support the broader wealth strategy year round.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 3: Audience Cards
+  ==================================================== -->
+  <section class="audience-grid">
+
+    <!-- Business Owners -->
+    <a href="business-owners.html" class="audience-card">
+      <img src="Resources/HomePage/ManBackgroundImage.avif" alt="Business Owners" loading="lazy" />
+      <div class="audience-card-overlay">
+        <div class="audience-card-label">
+          <span>Are You A&hellip;</span>
+          Click Here If You Are A Business Owner
+        </div>
+      </div>
+    </a>
+
+    <!-- Retirees -->
+    <a href="pre-retirees.html" class="audience-card">
+      <img src="Resources/HomePage/RetireeBackgroundImage.avif" alt="Pre-Retirees and Retirees" loading="lazy" />
+      <div class="audience-card-overlay">
+        <div class="audience-card-label">
+          <span>Are You A&hellip;</span>
+          Click Here If You Are A Business Retiree or Pre-Retiree
+        </div>
+      </div>
+    </a>
+
+    <!-- High Earners -->
+    <a href="high-earners.html" class="audience-card">
+      <img src="Resources/HomePage/HighEarnerBackgroundImage.avif" alt="High Earners & Wealth Accumulators" loading="lazy" />
+      <div class="audience-card-overlay">
+        <div class="audience-card-label">
+          <span>Are You A&hellip;</span>
+          Click Here If You Are A High Earner / Wealth Accumulator
+        </div>
+      </div>
+    </a>
+
+  </section>
+
+  <!-- ===================================================
+       SECTION 4: Total Wealth Management Approach
+  ==================================================== -->
+  <section class="section approach-section">
+    <div class="container">
+      <div class="section-heading text-center light reveal">
+        <h2>Our Total Wealth Management Approach</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="approach-text reveal reveal-delay-1">
+        <p>
+          Our clients recognize that success and &ldquo;doing well&rdquo; often brings added complexity
+          to managing the entirety of their financial picture. Our clients value our
+          &ldquo;Total Wealth Management&rdquo; approach with our multi-disciplined team taking ownership
+          of optimizing and integrating your professional team in every area of the Wealth Management Circle below.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 5: Wealth Management Circle Image
+  ==================================================== -->
+  <section class="section bg-off-white">
+    <div class="container text-center">
+      <div class="circle-image-wrap reveal">
+        <img src="Resources/HomePage/Circle.png" alt="Total Wealth Management Circle" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 6: Fiduciary Strip + Watch Video
+  ==================================================== -->
+  <section class="section fiduciary-strip">
+    <div class="container">
+      <div class="fiduciary-strip-inner">
+        <div class="section-heading text-center reveal">
+          <h2>Our firm is an independent fiduciary, not a broker&hellip;</h2>
+          <div class="divider"></div>
+          <p>What&rsquo;s the difference?</p>
+        </div>
+        <div class="reveal reveal-delay-1" style="margin-top:2rem;">
+          <a href="https://www.youtube.com/watch?v=yXNW5AukPQI&t=10s"
+             target="_blank" rel="noopener" class="watch-btn">
+            <span class="play-circle"></span>
+            Watch: 3 Rules That Separate Winners from Losers
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 7: Schedule CTA
+  ==================================================== -->
+  <section class="banner-cta">
+    <div class="container">
+      <a href="contact.html" class="btn btn-gold" style="font-size:1rem; padding:16px 40px;">
+        Schedule a 15-Minute Personalized Virtual Introduction Here
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer injected by partials.js -->
+  <div id="footer-placeholder"></div>
+
+  <script src="partials.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

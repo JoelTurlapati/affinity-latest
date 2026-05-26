@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fiduciary vs. Broker | The Affinity Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.revealed { opacity: 1; transform: none; }
+    .fid-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      padding: 60px 0;
+      border-bottom: 1px solid var(--light-gray);
+    }
+    .fid-section:last-child { border-bottom: none; }
+    .fid-section.reverse .fid-img { order: 2; }
+    .fid-section.reverse .fid-text { order: 1; }
+    .fid-img img {
+      width: 100%;
+      border-radius: 4px;
+      box-shadow: var(--shadow);
+    }
+    .fid-text h3 { color: var(--navy); margin-bottom: 1rem; }
+    .fid-text p { color: #444; line-height: 1.8; }
+    @media (max-width: 760px) {
+      .fid-section { grid-template-columns: 1fr; gap: 2rem; }
+      .fid-section.reverse .fid-img,
+      .fid-section.reverse .fid-text { order: unset; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <!-- Hero -->
+  <div class="page-offset"></div>
+  <section style="background:linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%); padding:80px 0 50px; text-align:center;">
+    <div class="container">
+      <h1 style="color:var(--white);">Fiduciary vs. Broker</h1>
+      <div class="divider"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: What is a Fiduciary -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading text-center reveal">
+        <h2>What is a Fiduciary?</h2>
+        <div class="divider"></div>
+      </div>
+      <div style="max-width:820px; margin:0 auto; text-align:center;">
+        <p class="reveal" style="font-size:1.15rem; color:#444; line-height:1.9;">
+          A fiduciary is a person or organization that acts on behalf of another person or persons,
+          putting their clients&rsquo; interests ahead of their own, with a duty to preserve good faith and trust.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: Three comparative sections -->
+  <section class="section bg-off-white">
+    <div class="container">
+
+      <div class="fid-section reveal">
+        <div class="fid-text">
+          <h3>Financial Advisors vs. Fiduciaries</h3>
+          <p>
+            Not all financial advisors are fiduciaries. As a matter of fact, many aren&rsquo;t. Brokers, also known
+            as registered representatives, are only held to a suitability standard, which requires that the broker
+            make recommendations that are suitable based on a client&rsquo;s personal situation, but the standard
+            does not require the advice to be in the client&rsquo;s best interest. Therefore, some brokers may
+            act for their own benefit.
+          </p>
+        </div>
+        <div class="fid-img">
+          <img src="Resources/FiduciaryVsBroker/FiduciaryVsBrokerImage1.avif" alt="Financial Advisors vs. Fiduciaries" />
+        </div>
+      </div>
+
+      <div class="fid-section reverse reveal">
+        <div class="fid-img">
+          <img src="Resources/FiduciaryVsBroker/FiduciaryVsBrokerImage2.avif" alt="Legally Best For You" />
+        </div>
+        <div class="fid-text">
+          <h3>Legally Best For You</h3>
+          <p>
+            Being a fiduciary requires being bound both legally and ethically to act in the other&rsquo;s best interests.
+            This is the standard we hold ourselves to every single day for each and every one of our clients.
+            It&rsquo;s not just how we operate &mdash; it&rsquo;s who we are.
+          </p>
+        </div>
+      </div>
+
+      <div class="fid-section reveal">
+        <div class="fid-text">
+          <h3>Going the Extra Mile</h3>
+          <p>
+            Being a Fiduciary means that we take extra steps and go the extra mile to ensure that our clients&rsquo;
+            financial issues are being looked after with the care that they deserve, held to the highest Fiduciary
+            Standard in the industry.
+          </p>
+        </div>
+        <div class="fid-img">
+          <img src="Resources/FiduciaryVsBroker/FiduciaryVsBrokerImage3.avif" alt="Going the Extra Mile" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="banner-cta">
+    <div class="container">
+      <a href="contact.html" class="btn btn-gold">Schedule Your Free Introductory Call</a>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="partials.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

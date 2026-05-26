@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videos | The Affinity Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.revealed { opacity: 1; transform: none; }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 2.5rem;
+    }
+    .video-card { }
+    .video-card h4 { color: var(--navy); margin-top: 1rem; margin-bottom: 0.25rem; font-size: 1rem; }
+    .video-card p  { font-size: 0.85rem; color: var(--mid-gray); }
+  </style>
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <!-- Hero -->
+  <div class="page-offset"></div>
+  <section style="background:linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%); padding:80px 0 50px; text-align:center;">
+    <div class="container">
+      <h1 style="color:var(--white);">Videos</h1>
+      <div class="divider"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="video-grid">
+
+        <div class="video-card reveal">
+          <a href="https://www.youtube.com/watch?v=yXNW5AukPQI" target="_blank" rel="noopener" class="video-thumb" style="display:block; border-radius:4px; overflow:hidden;">
+  <img src="https://img.youtube.com/vi/yXNW5AukPQI/hqdefault.jpg" alt="3 Rules That Separate Winners from Losers" style="width:100%; display:block;" loading="lazy" />
+  <div class="play-btn"><div class="play-btn-circle"></div></div>
+</a>
+          <h4>3 Rules That Separate Winners from Losers</h4>
+          <p>Fiduciary vs. Broker &mdash; What&rsquo;s the difference?</p>
+        </div>
+
+        <div class="video-card reveal">
+          <a href="https://www.youtube.com/watch?v=Jye1GOrWSJg" target="_blank" rel="noopener" class="video-thumb" style="display:block; border-radius:4px; overflow:hidden;">
+  <img src="https://img.youtube.com/vi/Jye1GOrWSJg/hqdefault.jpg" alt="Total Wealth Management Explained" style="width:100%; display:block;" loading="lazy" />
+  <div class="play-btn"><div class="play-btn-circle"></div></div>
+</a>
+          <h4>Total Wealth Management Explained</h4>
+          <p>A comprehensive overview of our Total Wealth Management approach.</p>
+        </div>
+
+        <div class="video-card reveal">
+          <a href="https://www.youtube.com/watch?v=6tuSzhb-lZI" target="_blank" rel="noopener" class="video-thumb" style="display:block; border-radius:4px; overflow:hidden;">
+  <img src="https://img.youtube.com/vi/6tuSzhb-lZI/hqdefault.jpg" alt="Investment Management" style="width:100%; display:block;" loading="lazy" />
+  <div class="play-btn"><div class="play-btn-circle"></div></div>
+</a>
+          <h4>Investment Management</h4>
+          <p>Our fiduciary investment management philosophy and process.</p>
+        </div>
+
+        <div class="video-card reveal">
+          <a href="https://www.youtube.com/watch?v=hG4dzwl8Sag" target="_blank" rel="noopener" class="video-thumb" style="display:block; border-radius:4px; overflow:hidden;">
+  <img src="https://img.youtube.com/vi/hG4dzwl8Sag/hqdefault.jpg" alt="Real Estate Investing" style="width:100%; display:block;" loading="lazy" />
+  <div class="play-btn"><div class="play-btn-circle"></div></div>
+</a>
+          <h4>Real Estate Investing</h4>
+          <p>How we help clients build wealth through real estate.</p>
+        </div>
+
+        <div class="video-card reveal">
+          <a href="https://www.youtube.com/watch?v=RjpXaUGnWSg" target="_blank" rel="noopener" class="video-thumb" style="display:block; border-radius:4px; overflow:hidden;">
+  <img src="https://img.youtube.com/vi/RjpXaUGnWSg/hqdefault.jpg" alt="Life Insurance &amp; Your Financial Plan" style="width:100%; display:block;" loading="lazy" />
+  <div class="play-btn"><div class="play-btn-circle"></div></div>
+</a>
+          <h4>Insurance &amp; Your Financial Plan</h4>
+          <p>Scott Lowe on the importance of incorporating insurance into your financial plan.</p>
+        </div>
+
+        <div class="video-card reveal">
+          <a href="https://www.youtube.com/watch?v=P5DPc7iY5g8" target="_blank" rel="noopener" class="video-thumb" style="display:block; border-radius:4px; overflow:hidden;">
+  <img src="https://img.youtube.com/vi/P5DPc7iY5g8/hqdefault.jpg" alt="Tax Planning" style="width:100%; display:block;" loading="lazy" />
+  <div class="play-btn"><div class="play-btn-circle"></div></div>
+</a>
+          <h4>Tax Planning</h4>
+          <p>Integrated tax planning and preparation for select Affinity Wealth clients.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="partials.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>
